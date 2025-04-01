@@ -6,7 +6,9 @@
 ![React](https://img.shields.io/badge/React-18.x-61DAFB.svg?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.x-3178C6.svg?logo=typescript)
 
-Un'applicazione Electron avanzata con React e TypeScript. Ideale per sviluppare applicazioni desktop robuste e moderne con tipizzazione statica e componenti UI reattivi.
+An advanced Electron application with React and TypeScript. Ideal for developing robust and modern desktop applications with static typing and reactive UI components.
+
+**Topics:** `electron` `react` `typescript` `vite` `cross-platform` `desktop-app` `offline-first` `local-storage` `data-export`
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -18,19 +20,19 @@ Un'applicazione Electron avanzata con React e TypeScript. Ideale per sviluppare 
 
 ## ✨ Features
 
-- ⚛️ React framework per componenti UI
-- 📊 Supporto per dashboard e visualizzazioni statistiche
-- 🗓️ Possibilità di implementare timeline e viste calendario
-- 💾 Salvataggio dati in localStorage (100% offline)
-- 📤 Funzionalità di import/export e backup
-- 🔄 Hot Module Replacement (HMR) durante lo sviluppo
-- ⚡ Build ultra-veloce con Vite bundler
-- 📦 Packaging cross-platform
-- 🔒 Type safety con TypeScript
-- 🧩 Integrazione nativa con Node.js
-- 🔍 Linting TypeScript con ESLint
-- 🎨 Formattazione del codice con Prettier
-- 🖌️ Architettura basata su componenti
+- ⚛️ React framework for UI components
+- 📊 Support for dashboard and statistical visualizations
+- 🗓️ Ability to implement timeline and calendar views
+- 💾 Data storage in localStorage (100% offline)
+- 📤 Import/export and backup functionality
+- 🔄 Hot Module Replacement (HMR) during development
+- ⚡ Ultra-fast build with Vite bundler
+- 📦 Cross-platform packaging
+- 🔒 Type safety with TypeScript
+- 🧩 Native Node.js integration
+- 🔍 TypeScript linting with ESLint
+- 🎨 Code formatting with Prettier
+- 🖌️ Component-based architecture
 
 ## 🗂️ Project Structure
 
@@ -91,106 +93,106 @@ $ pnpm build:linux
 
 ## 📦 Package Managers
 
-Questo progetto supporta diversi package manager. Ecco come utilizzare ciascuno:
+This project supports multiple package managers. Here's how to use each one:
 
 ### NPM
 
-NPM è il package manager predefinito per Node.js.
+NPM is the default package manager for Node.js.
 
-**Installazione NPM:**
+**Install NPM:**
 ```bash
-# Incluso con l'installazione di Node.js
+# Included with Node.js installation
 ```
 
-**Setup progetto con NPM:**
+**Setup project with NPM:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ npm install
 
-# Avvio server di sviluppo
+# Run development server
 $ npm run dev
 
-# Build dell'applicazione
+# Build application
 $ npm run build:win
 $ npm run build:mac
 $ npm run build:linux
 ```
 
-**Caratteristiche principali:**
-- 📚 Vasto ecosistema di pacchetti
-- 🔒 Struttura gerarchica di node_modules
-- 📋 Package.json per la gestione delle dipendenze
+**Key features:**
+- 📚 Vast package ecosystem
+- 🔒 Hierarchical node_modules structure
+- 📋 Package.json for dependency management
 
 ### Yarn
 
-Yarn è un'alternativa rapida, affidabile e sicura a NPM.
+Yarn is a fast, reliable, and secure alternative to NPM.
 
-**Installazione Yarn:**
+**Install Yarn:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g yarn
 ```
 
-**Setup progetto con Yarn:**
+**Setup project with Yarn:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ yarn
 
-# Avvio server di sviluppo
+# Run development server
 $ yarn dev
 
-# Build dell'applicazione
+# Build application
 $ yarn build:win
 $ yarn build:mac
 $ yarn build:linux
 ```
 
-**Caratteristiche principali:**
-- ⚡ Velocità di installazione superiore
-- 📦 Caching offline
-- 🔒 Maggiore sicurezza con checksum
-- 📋 yarn.lock per installazioni deterministiche
+**Key features:**
+- ⚡ Faster installation speeds
+- 📦 Offline caching
+- 🔒 Better security with checksums
+- 📋 yarn.lock for deterministic installations
 
 ### PNPM
 
-PNPM è un package manager efficiente in termini di spazio su disco.
+PNPM is a disk-space efficient package manager.
 
-**Installazione PNPM:**
+**Install PNPM:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g pnpm
 ```
 
-**Setup progetto con PNPM:**
+**Setup project with PNPM:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ pnpm install
 
-# Avvio server di sviluppo
+# Run development server
 $ pnpm dev
 
-# Build dell'applicazione
+# Build application
 $ pnpm build:win
 $ pnpm build:mac
 $ pnpm build:linux
 ```
 
-**Caratteristiche principali:**
-- 💾 Risparmio di spazio su disco tramite symlink
-- 🚀 Velocità di installazione elevata
-- 🔄 Storage con indirizzamento basato sul contenuto
-- 📋 pnpm-lock.yaml per blocco delle dipendenze
+**Key features:**
+- 💾 Disk space savings through symlinks
+- 🚀 Fast installation speeds
+- 🔄 Content-addressable storage
+- 📋 pnpm-lock.yaml for dependency lock
 
-### Confronto
+### Comparison
 
-| Funzionalità          | NPM     | Yarn    | PNPM    |
+| Feature               | NPM     | Yarn    | PNPM    |
 |-----------------------|---------|---------|---------|
-| Utilizzo disco        | Alto    | Alto    | Basso   |
-| Velocità installazione| Lenta   | Veloce  | Velocissima |
-| Installazioni parallele| Limitato| Sì      | Sì      |
-| Supporto workspaces   | Limitato| Buono   | Ottimo  |
-| Modalità offline      | Limitato| Buono   | Buono   |
-| Sicurezza             | Buona   | Migliore| Migliore|
+| Disk usage            | High    | High    | Low     |
+| Installation speed    | Slow    | Fast    | Fastest |
+| Parallel installations| Limited | Yes     | Yes     |
+| Workspace support     | Limited | Good    | Best    |
+| Offline mode          | Limited | Good    | Good    |
+| Security              | Good    | Better  | Better  |
 
 ## 📚 Resources
 
